@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background:#fff;
+    color: #fff
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.container{
+    padding: 5px 5%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered;            
+}
+span{
+    color: orangered;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    margin-inline-end: 1px;
+}
+nav ul li a{
+    color: #fbf9f9;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+/*.......................hover block line...............................*/
+
+nav ul li a::after{
+    content:'';
+    width: 0%;
+    height: 3px;
+    background: #ff004f ;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5%;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+i{
+    margin-left: 3px;
+}
+.btn-box{
+   width: 345px;
+   display:flex;
+   gap: 2em;
+   padding-top: 5%;
+   text-align: center;
+}
+.btn-1{
+    padding: 15px 10px;
+    background-color:#04AA6D;
+    color: #fff;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    
+}
+.btn-1:hover{
+    background-color:#fff   ;
+    color: #080808;
+    border: 2px solid black;
+}
+.btn-2{
+    padding: 15px 20px;
+    background-color:orangered;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: #fff;
+    color: orangered;
+}
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #04AA6D;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff
+}
+.block:hover{
+    background-color: orangered;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 100px;
+}
+.header-text h1 span{
+    color:#ff004f
+}
+.header-text p{
+    font-size: 20px;
+    margin-top:50px;
+}
+
+/*.........................secound div.....................*/
+.container-1{
+    display: flex;
+    justify-content: center;
+   text-align: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.box{
+    height: 150px;
+    width: 600px;
+    border: radius 20px;
+    background-color: #fff;
+    border-top: 1px solid rgba (0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10x;
+    margin-right: 20px;
+    padding: 15px 20px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+    color: #080808;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: #fff;
+    color: black;
+    border: 2px solid silver;
+}
+
+.icon{
+    height: 80px;
+    width: 150px;
+}
+
+.icon i{
+    font-size: 60px;
+    color: #04AA6D;
+}
+
+.detail{
+    height: 110px;
+}
+
+.details h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.details p{
+    text-align: left;
+}
+
+/*...............................third div...........................*/
+
+.img {
+    width: 50;
+    height: 50vh;
+    background-image: url(img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-1 h2{
+    font-size: 50px;
+    margin-left: 100px;
+    margin-top: 60px;
+    padding-top: 80px;
+}
+
+.header-1 h3{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 100px ;
+}
+
+.header-1 h2 span{
+    color: #04AA6D;
+}
+
+.header-1 h3 span{
+    color: #ff004f;
+}
+
+.btn-box-1{
+    width: 40%;
+    display:flex;
+    gap: 2em;
+    padding-top: 1px;
+    text-align: center;
+    float:right;
+    padding-right: 30%;
+ }
+
+ .btn-3{
+    padding: 15px 50px;
+    background-color:#04AA6D;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-right: 50px;
+    margin-bottom: 300px;
+}
+
+.btn-3:hover{
+    background-color:#fff   ;
+    color: #080808;
+    border: 2px solid black;
+}
+
+.btn-4{
+    padding: 15px 50px;
+    background-color: orangered;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-right: 50px;
+    margin-bottom: 300px;
+    
+}
+
+.btn-4:hover{
+    background-color: #fff;
+    color: orangered;
+}
+
+
+/*..............................fourth div....................................*/
+
+
+.table{
+    width: 100;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.head-text p{
+    font-size: 25px;
+    text-align: center;
+    color: #ff004f;
+    margin-top: 70px;
+    padding-left: 35%;
+}
+
+.head-text h4{
+    font-size: 50px;
+    text-align: center;
+    color:#080808;
+    padding-left: 35%;
+    
+}
+
+.btn-box-2{
+    width: 42%;
+    display:flex;
+    gap: 2em;
+    padding-top: 30px;
+    text-align: center;
+    float:right;
+    padding-left: 50px;
+    float: left;
+}
+
+.btn-5{
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #fff;
+    border-top: 1px solid rgba (0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10x;
+    margin-right: 20px;
+    padding: 15px 20px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+    color: #080808;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.btn-6{
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #fff;
+    border-top: 1px solid rgba (0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10x;
+    margin-right: 20px;
+    padding: 15px 20px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+    color: #080808;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.btn-7{
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #fff;
+    border-top: 1px solid rgba (0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10x;
+    margin-right: 20px;
+    padding: 15px 20px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+    color: #080808;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn-5:hover{
+    background-color: #fff;
+    color: orangered;
+}
+
+.btn-6:hover{
+    background-color: #fff;
+    color: orangered;
+}
+
+.btn-7:hover{
+    background-color: #fff;
+    color: orangered;
+}
+
+/*.....................................table...........................*/
+
+.data {
+    border-collapse: collapse;
+    width: 50%;
+    background-color: #fff;
+    color: #080808;
+    margin-top: 10%;
+    margin-left: 3%;
+    padding-left: px;
+}
+
+
+
+.data th{
+    margin-bottom: 10%;
+    padding-bottom: 3%;
+    border-bottom: #080808 solid 1px;
+}
+
+.data td{
+    padding-bottom: 3%;
+    margin-bottom: 10%;
+    border-bottom: #080808 solid 1px;
+    text-align: center;
+    padding-top: 3%;
+    margin-top: 10%
+}
+
+.color{
+    color: #04AA6D;
+    font-weight: 600;
+}
+
+.pgh{
+    background-color: #fff;
+    color: #080808;
+    float: right;
+}
+
+.pgh h5{
+    text-align: left;
+    font-weight: 600;
+    font-size: 25px;
+    margin-right: 20%;
+    padding-right: 5%;
+    margin-left: 20%;
+}
+
+.pgh p{
+    text-align: left;
+    margin-left: 20%;
+    padding-right: 5%;
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.pgh span{
+    color: #080808;
+    font-weight: 600;
+}
+
+.btn-box-3{
+   width: 345px;
+   display:flex;
+   gap: 2em;
+   padding-top: 5%;
+   text-align: center;
+   float: right;
+   margin-left: 0%
+}
+
+.btn-8{
+    padding: 15px 50px;
+    background-color:#04AA6D;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.btn-8:hover{
+    background-color:#fff;
+    color: #080808;
+    border: 2px solid black;
+}
+
+
+/*.............................fifth div..............................*/
+
+.img-1 {
+    width: 30;
+    height: 30vh;
+    background-image: url(img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-2{
+     float: right;
+}
+
+.header-2 h2{
+    font-size: 25px;
+    margin-right: 400px;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.header-2 h3{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-right: 400px ;
+}
+
+
+
+
+
